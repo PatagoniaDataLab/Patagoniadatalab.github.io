@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Información Responsive</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            color: #555;
+            font-size: 1em;
+        }
+
+        /* Media Queries para diseño responsive */
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .card {
+                max-width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .card {
+                max-width: calc(33.33% - 20px); /* Tres tarjetas por fila en pantallas grandes */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Tablero 1</h2>
+            <p>Información relevante sobre el tablero 1.</p>
+        </div>
+        <div class="card">
+            <h2>Tablero 2</h2>
+            <p>Información relevante sobre el tablero 2.</p>
+        </div>
+        <div class="card">
+            <h2>Tablero 3</h2>
+            <p>Información relevante sobre el tablero 3.</p>
+        </div>
+        <div class="card">
+            <h2>Tablero 4</h2>
+            <p>Información relevante sobre el tablero 4.</p>
+        </div>
+        <div class="card">
+            <h2>Tablero 5</h2>
+            <p>Información relevante sobre el tablero 5.</p>
+        </div>
+        <div class="card">
+            <h2>Tablero 6</h2>
+            <p>Información relevante sobre el tablero 6.</p>
+        </div>
+    </div>
+</body>
+</html>
