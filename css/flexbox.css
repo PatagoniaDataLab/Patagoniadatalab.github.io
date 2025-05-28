@@ -1,0 +1,47 @@
+/*---------------------------------------------------
+X .TABLEROS
+---------------------------------------------------*/
+
+.distancia {
+  padding: 15px;
+
+}
+
+.titulo {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #2b5876, #4e4376);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.item {
+  border: 0px solid rgb(209, 204, 204);
+  text-align: center;
+  
+}
+
+.titulo {
+  text-align: center;
+  margin: 1% 0;
+}
+
+.distancia .btn {
+  margin-top: 20px; /* Ajusta este valor según necesites */
+}
+
+.distancia .item {
+  padding-bottom: 20px; /* Espacio interno en la parte inferior */
+}
