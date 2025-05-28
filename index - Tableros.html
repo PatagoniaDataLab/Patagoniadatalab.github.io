@@ -42,7 +42,12 @@
   <!-- Carga del CSS personalizado -->
   <link rel="stylesheet" href="css/estilos.css">
 
-  
+  <!-- Carga del CSS FLEXBOX -->
+
+  <link rel="stylesheet" href="css/flexbox.css">
+
+
+
 </head>
 
 <body>
@@ -119,14 +124,14 @@
 
   <!-- Sección #menu-navegacion -->
 
-  <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
+   <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
     <div class="container">
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
         aria-expanded="false" aria-label="Botón Menú Principal">
         <span class="boton-menu"></span>
       </button>
-      <a href="index - Tableros.html" 
-      class="btn btn-primary order-md-1 mx-auto d-block" rel="noopener noreferrer">Volver a los Tableros</a>
+      <a href="index.html" 
+      class="btn btn-primary order-md-1 mx-auto d-block" rel="noopener noreferrer">Volver al Inicio</a>
 
      
 
@@ -135,40 +140,51 @@
   </nav>
 
   <!-- tableros -->
+    <main class="distancia">
 
-  <div style="width: 100%; display: flex; justify-content: center;">
-    <div class='tableauPlaceholder' id='viz1746976225502' style='position: relative; width: 1600px;'>
-      <noscript>
-        <a href='#'>
-          <img alt='DashPATA' src='https://public.tableau.com/static/images/De/DeudaPublicaProvincial/DashPATA/1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz' style='width: 100%; height: 927px;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='DeudaPublicaProvincial/DashPATA' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/De/DeudaPublicaProvincial/DashPATA/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='es-ES' />
-      </object>
-    </div>
-  </div>
-  
-  <script type='text/javascript'>
-    var divElement = document.getElementById('viz1746976225502');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-  
+      <section>
+
+        <h2 class="titulo">Tableros</h2>
+        <div>
+          <div class="flex-container">
+            <div class="item">
+              <img src="imagenes/TABLEROS/CambioClimatico.jpg" alt="" width="400" height="300"> <br>
+              <a href="index - CLIMA.html"
+              class="btn btn-primary mx-2 espacio" rel="noopener noreferrer">Cambio Climatico</a>
+
+            </div>
+
+            <div class="item">
+              <img src="imagenes/TABLEROS/DeudaPublica.jpg" alt="" width="400" height="300"> <br>
+              <a href="index - Deuda.html"
+              class="btn btn-primary mx-2" rel="noopener noreferrer">Deuda Pública Provincial</a>
+
+            </div>
+            <div class="item">
+              <img src="imagenes/TABLEROS/DesembarquesPesqueros.jpg" alt="" width="400" height="300"> <br>
+              <a href="index - Pesca.html"
+              class="btn btn-primary mx-2" rel="noopener noreferrer">Desembarque Pesquero</a>
+
+            </div>
+            <div class="item">
+              <img src="imagenes/TABLEROS/ProyeccionesdePrecio.jpg" alt="" width="400" height="300"> <br>
+              <a href="index - PeroyeccionesPrecio.html"
+              class="btn btn-primary mx-2" rel="noopener noreferrer">Proyecciones de Precios</a>
+
+            </div>
+      
+          </div>
+        </div>
+
+
+
+      </section>
+
+    </main>
+
+
+
+
 
 
 
