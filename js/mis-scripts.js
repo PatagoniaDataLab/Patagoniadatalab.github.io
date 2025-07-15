@@ -52,12 +52,12 @@ $(function () {
 
 
     /*-----------------------------------------------------------
-     2. INICIANDO COUNTERUP
+     3. INICIANDO COUNTERUP
      -------------------------------------------------------------*/
      $('.counter').counterUp();
 
     /*-----------------------------------------------------------
-     2. encabezado fijo en el celu
+     4. encabezado fijo en el celu
     -------------------------------------------------------------*/
 
      $('#menu-navegacion').stickit({
@@ -65,7 +65,7 @@ $(function () {
      });
 
     /*-----------------------------------------------------------
-     2. Iniciando "page-scroll-to-id"
+     5. Iniciando "page-scroll-to-id"
     -------------------------------------------------------------*/
 
 
@@ -74,4 +74,21 @@ $(function () {
         highlightClass:'active'
 
      });
+
+     /*-----------------------------------------------------------
+     6. Iniciando el formulario de INGRESO
+    -------------------------------------------------------------*/
+
+     document.getElementById('loginForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const user = document.getElementById('usuario').value;
+  const pass = document.getElementById('contrasena').value;
+
+  if (user === 'admin' && pass === '1234') {
+    window.location.href = 'index.html';  // Cambiá esto al link que quieras
+  } else {
+    alert('Usuario o contraseña incorrectos');
+  }
+});
 })
