@@ -86,7 +86,7 @@ $(function () {
   const pass = document.getElementById('contrasena').value;
 
   if (user === 'admin' && pass === '1234') {
-    window.location.href = 'index.html';  // Cambiá esto al link que quieras
+    window.location.href = 'principal.html';  // Cambiá esto al link que quieras
   } else {
     alert('Usuario o contraseña incorrectos');
   }
