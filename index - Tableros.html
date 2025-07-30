@@ -52,32 +52,26 @@
 
 <body>
   <!--SECCION BARRA CONTACTO-->
-  <section id="barra-contacto" class="bg-primary text-white py-3 py-lg-1 text-center">
+    <section id="barra-contacto" class="bg-primary text-white py-2">
     <div class="container">
-      <div class="row justify-content-sm-between align-items-sm-center">
-        <div class="col-12 col-sm-auto">
-          <span>Síguenos en las redes sociales</span>
-        </div>
+      <div class="row align-items-center justify-content-center">
 
-        <div class="col-12 col-sm-auto">
+        <!-- Redes Sociales -->
+        <div class="col-auto d-flex align-items-center">
+          <span class="mr-2">Síguenos en las redes sociales</span>
           <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
-            <li style="display: flex; align-items: center; margin-right: 10px;">
-              <a href="https://github.com/PatagoniaDataLab" target="_blank">
-                <i class="fa-brands fa-github" style="font-size: 22px;"></i></a>
+            <li style="margin-right: 10px;">
+              <a href="https://x.com/PatagoniaDL" target="_blank" class="text-white">
+                <i class="fa-brands fa-x-twitter"></i></a>
             </li>
-            <li style="display: flex; align-items: center; margin-right: 10px;">
-              <a href="https://x.com/PatagoniaDL" target="_blank">
-                <i class="fa-brands fa-x-twitter" style="font-size: 22px;"></i></a>
+            <li style="margin-right: 10px;">
+              <a href="https://www.linkedin.com/company/104582288/admin/dashboard/" target="_blank" class="text-white">
+                <i class="fa-brands fa-linkedin"></i></a>
             </li>
-            <li style="display: flex; align-items: center; margin-right: 10px;">
-              <a href="https://www.linkedin.com/company/104582288/admin/dashboard/" target="_blank">
-                <i class="fa-brands fa-linkedin" style="font-size: 22px;"></i></a>
+            <li style="margin-right: 10px;">
+              <a href="https://www.instagram.com/patagonia_data_lab/" target="_blank" class="text-white">
+                <i class="fa-brands fa-instagram"></i></a>
             </li>
-            <li style="display: flex; align-items: center; margin-right: 10px;">
-              <a href="https://www.instagram.com/patagonia_data_lab/" target="_blank">
-                <i class="fa-brands fa-instagram" style="font-size: 22px;"></i></a>
-            </li>
-
             <li style="display: flex; align-items: center; margin-right: 10px;">
               <a href="https://public.tableau.com/app/profile/patagoniadatalab/vizzes" target="_blank">
                 <i class="tableau-icon">
@@ -85,13 +79,25 @@
                 </i>
               </a>
             </li>
+            <li style="margin-right: 10px;">
+              <a href="https://github.com/PatagoniaDataLab" target="_blank" class="text-white">
+                <i class="fa-brands fa-github"></i></a>
+            </li>
           </ul>
         </div>
+
+        <!-- Formulario Acceso -->
+        <div class="col-auto">
+          <form id="loginForm" class="form-inline">
+            <input type="text" id="usuario" class="form-control form-control-sm mr-2" placeholder="Usuario" required>
+            <input type="password" id="contrasena" class="form-control form-control-sm mr-2" placeholder="Contraseña"
+              required>
+            <button type="submit" class="btn btn-sm btn-light" id="btnIngresar">Ingresar</button>
+          </form>
+        </div>
+
       </div>
     </div>
-
-
-
   </section>
 
   <!--SECCION DETALLES ENCABEZADO-->
