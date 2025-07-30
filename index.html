@@ -50,7 +50,7 @@
   <!--SECCION BARRA CONTACTO-->
   <section id="barra-contacto" class="bg-primary text-white py-2">
   <div class="container">
-    <div class="row align-items-center justify-content-between">
+    <div class="row align-items-center justify-content-center">
 
       <!-- Redes Sociales -->
       <div class="col-auto d-flex align-items-center">
@@ -87,7 +87,7 @@
         <form id="loginForm" class="form-inline">
           <input type="text" id="usuario" class="form-control form-control-sm mr-2" placeholder="Usuario" required>
           <input type="password" id="contrasena" class="form-control form-control-sm mr-2" placeholder="Contraseña" required>
-          <button type="submit" class="btn btn-sm btn-light">Ingresar</button>
+          <button type="submit" class="btn btn-sm btn-light" id="btnIngresar">Ingresar</button>
         </form>
       </div>
 
@@ -441,77 +441,63 @@
 
 
 
-  <!-- Sección #contacto -->
-  <section id="contacto">
-    <header class="py-5 bg-primary text-white text-center position-relative">
-      <h2 class="display-4 font-weight-bold">Escribinos</h2>
-      <h6 class="text-white-50">Estamos listos para recibir tus ideas</h6>
-      <div class="detalle-rectangulo"></div>
-    </header>
+  <form action="https://formsubmit.co/patagoniadatalab@gmail.com" method="POST" class="bg-light my-3 p-4 border rounded shadow">
+  <h2 class="text-center mb-4">Formulario de Contacto</h2>
 
-    <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6"> <!-- Ajusté los tamaños de columna -->
-
-          <form action="" class="bg-light my-3 p-4 border rounded shadow">
-            <h2 class="text-center mb-4">Formulario de Contacto</h2>
-
-            <!-- Campo Nombre -->
-            <div class="form-group">
-              <label for="nombre">Nombre:</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                </div>
-                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre...">
-              </div>
-            </div>
-
-            <!-- Campo Email -->
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                </div>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su email...">
-              </div>
-            </div>
-
-            <!-- Campo Asunto -->
-            <div class="form-group">
-              <label for="asunto">Asunto:</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa-solid fa-rectangle-list"></i></span>
-                </div>
-                <select name="asunto" id="asunto" class="form-control">
-                  <option selected>Seleccione un asunto</option>
-                  <option value="Colaborar">Patrocinar la página</option>
-                  <option value="Recomendar un Dashboard">Recomendar un tema para el Dashboard</option>
-                  <option value="Otros">Otros</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- Campo Mensaje -->
-            <div class="form-group">
-              <label for="mensaje">Deje su mensaje:</label>
-              <textarea name="mensaje" id="mensaje" class="form-control" rows="5"></textarea>
-            </div>
-
-            <!-- Botón Enviar -->
-            <div class="form-group text-center mt-3">
-              <button type="submit" class="btn btn-primary px-4">Enviar</button>
-            </div>
-          </form>
-
-        </div>
+  <!-- Campo Nombre -->
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
       </div>
+      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre..." required>
     </div>
-    
+  </div>
 
-  </section>
+  <!-- Campo Email -->
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su email..." required>
+    </div>
+  </div>
+
+  <!-- Campo Asunto -->
+  <div class="form-group">
+    <label for="asunto">Asunto:</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa-solid fa-rectangle-list"></i></span>
+      </div>
+      <select name="asunto" id="asunto" class="form-control" required>
+        <option value="" disabled selected>Seleccione un asunto</option>
+        <option value="Colaborar">Patrocinar la página</option>
+        <option value="Recomendar un Dashboard">Recomendar un tema para el Dashboard</option>
+        <option value="Otros">Otros</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Campo Mensaje -->
+  <div class="form-group">
+    <label for="mensaje">Deje su mensaje:</label>
+    <textarea name="mensaje" id="mensaje" class="form-control" rows="5" required></textarea>
+  </div>
+
+  <!-- Campos ocultos -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://patagoniadatalab.github.io/gracias.html">
+
+  <!-- Botón Enviar -->
+  <div class="form-group text-center mt-3">
+    <button type="submit" class="btn btn-primary px-4">Enviar</button>
+  </div>
+</form>
+
 
   <!-- Sección #pie-de-pagina -->
 
